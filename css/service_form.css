@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: #eeeeeedb;
+}
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 20px 1px rgb(0 0 0 / 25%);
+    border-top: 5px solid #06a3da75;
+    border-bottom: 5px solid #06a3da75;
+    
+}
+.container header {
+  font-size: 2.5rem;
+  color: #120d0d;
+  font-weight: 600;
+  /* text-align: center; */
+}
+.container .form {
+  margin-top: 30px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .radio-button-box {
+  margin-top: 20px;
+}
+/* .radio-button-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+} */
+.form :where(.radio-button-option, .radio) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .radio {
+  column-gap: 5px;
+}
+.radio input {
+  accent-color: #06A3DA;
+}
+.form :where(.radio input, .radio label) {
+  cursor: pointer;
+}
+.radio label {
+  color: #707070;
+}
+.container .column #radio_bx{
+  position: relative;
+    left: 11%;
+
+    @media (max-width:650px){
+      left: 3%;
+    }
+  @media (max-width:500px){
+    left:0%;
+  }
+}
+
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #06A3DA;
+}
+.form button:hover {
+  font-weight: 900;
+  background: rgb(88, 56, 250);
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.radio-button-option, .radio) {
+    row-gap: 15px;
+  }
+}
+
+h4{
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #707070;
+}
+
+.h5_class{
+  position: absolute;
+  left: 5%;
+  color: #5b5959;
+}

@@ -1,0 +1,95 @@
+/* Main Body of Booking History CSS */
+.booking_history{
+    display: block;
+    position: relative;
+    width: 90%;
+    border: 2px solid black;
+    left: 5%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+/* History Heading CSS */
+.booking_history .history_101{
+    width: 100%;
+    height: 44px;
+    background-color: #06A3DA;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.history_101 h3{
+    margin: 0;
+    color: whitesmoke;
+}
+
+/* History Heading CSS end */
+
+
+/* Search bar css */
+.search-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.search-input {
+    border: none;
+    outline: none;
+    width: calc(100% - 50px); /* Adjust width as needed */
+    font-size: 16px;
+}
+.search-button {
+    /* background-color: #007bff; */
+    background-color: #06A3DA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+.search-button:hover {
+    /* background-color: #0056b3; */
+    background-color: #057eaa;
+}
+
+/* Search bar css end */
+
+
+/* Table Css */
+.booking_history .table-responsive table{
+    max-width: 90%;
+}
+.booking_history .table-responsive table tbody tr td{
+    vertical-align: middle;
+}
+/* Table Scroll Bar CSS */
+.table-container {
+    max-height: 300px; 
+    overflow-y: auto;
+  }
+
+  .table-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 4px;
+  }
+  .table-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.281);
+  }
+  .table-container::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.068);
+    border-radius: 4px;
+  }
+
+/* Table Css end */

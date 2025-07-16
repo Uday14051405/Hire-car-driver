@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #eeeeeedb;
+  /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+  /* background: linear-gradient(135deg, #9bbacf, #06A3DA); */
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 40px;
+  box-shadow: 1px 2px 20px 1px rgb(0 0 0 / 25%);
+  border-top: 5px solid #06a3da75;
+  border-bottom: 5px solid #06a3da75;
+}
+
+#forth_container{
+  padding: 10px 30px !important;
+}
+
+
+
+/* All Page Titles CSS Start Here */
+.container .first_title,
+.container .second_title,
+.container .third_title,
+.container .forth_title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+
+.container .first_title::before,
+.container .second_title::before,
+.container .third_title::before,
+.container .forth_title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #9bbacf, #06A3DA);
+}
+/* All Page Titles CSS End Here */
+
+
+/* Content CSS  Start Here*/
+.first_content form .user-details,
+.second_content form .user-details,
+.third_content form .user-details,
+.forth_content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 35px 0 12px 0;
+}
+
+@media(max-width: 584px){
+.first_content form .user-details,
+  .second_content form .user-details,
+  .third_content form .user-details,
+  .forth_content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+}
+/* Content CSS  End Here*/
+
+
+
+
+/* CSS of All Input Box start here */
+
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  /* border: 1px solid #ccc; */
+  border: 1px solid #9bbacf;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  /* border-color: #9b59b6; */
+  border-color: #06A3DA;
+}
+
+/* Gender Input Box */
+ form .gender-details .gender-title,
+ form .vehicle_type-details .vehicle_type-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+
+ /* Gender Options Circle CSS */
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #06A3DA;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+
+ /* Next, Back and Finish button CSS */
+ form .button{
+  height: 45px;
+  margin: 35px 0
+}
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+   background: linear-gradient(135deg, #9bbacf, #06A3DA);
+ }
+ form .button input:hover,
+ .container .second_title .back-button:hover,
+ .container .third_title .back-button:hover,
+ .container .forth_title .back-button:hover{
+  /* transform: scale(0.99); */
+  /* background: linear-gradient(-135deg, #71b7e6, #9b59b6); */
+  background: linear-gradient(-135deg, #9bbacf, #06A3DA);
+  }
+
+    
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .user-details .input-box .customfile{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .category{
+    width: 100%;
+  }
+  
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .first_content .category{
+    flex-direction: column;
+  }
+
+}
+
+
+/* Back Button CSS */
+.container .second_title .back-button,
+.container .third_title .back-button,
+.container .forth_title .back-button{
+  width: 60px;
+    right: 0%;
+    position: absolute;
+    top: -100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+   background: linear-gradient(135deg, #9bbacf, #06A3DA);
+   height: 45px;
+  margin: 35px 0;
+}
+
+@media screen and (max-width: 420px){
+.container .second_title .back-button,
+.container .forth_title .back-button {
+    width: 70px;
+    top: 0px;
+}
+}
+@media screen and (max-width: 361px){
+  .container .second_title .back-button,
+  .container .third_title .back-button{
+      width: 70px;
+      top: -30px;
+  }
+  }
+@media screen and (max-width: 327px){
+  .container .forth_title .back-button{
+    width: 70px;
+    top: -30px;
+}
+}
+
+/* Back Button CSS End here */
+
+
+/* list css */
+.checkbox-list li {
+  display: inline-block; 
+  margin-right: 20%; 
+}
+
+
+
+/* Custom File Input ----------------- Start */
+.input-box .customfile{
+  border: 5px double #06A3DA !important;
+  border-radius: 50px !important;
+  padding: 2px !important;
+  font-size: 17px !important;
+  width: 100% !important;
+}
+
+.customfile::-webkit-file-upload-button{
+  /* background-image: linear-gradient(blue, black); */
+  /* background: linear-gradient(135deg, #9b59b6, #71b7e6); */
+  background: linear-gradient(135deg, #9bbacf, #06A3DA);
+  color: #fff;
+  padding: 8px, 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.customfile:hover{
+  /* background: linear-gradient(-135deg, #71b7e6, #9b59b6); */
+  background: linear-gradient(-135deg, #9bbacf, #06A3DA);
+  opacity: 0.8;
+}
+
+/* Custom File Input ----------------- End */
+
+
+
+
+/* Terms and Condition Part CSS start here */
+
+form .T-C-details .T-C-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .lbl_category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .lbl_category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .lbl_category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .lbl_category label .one{
+   background: #06A3DA;
+   border-color: #d9d9d9;
+ }
+
+ @media(max-width: 584px){
+ form .lbl_category{
+  width: 100%;
+}
+ }
+
+@media(max-width: 459px){
+  .container .forth_content .lbl_category{
+    flex-direction: column;
+  }
+}
+
+/* Terms and Conditions CSS Part End here */
